@@ -1,42 +1,59 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.button {
+  padding: .4rem;
+  color: white;
+  background-color: #1f1f1f;
+  border: 1px solid #383838;
+  border-radius: .8rem;
+
+  transition: border-color .3s;
+}
+
+.button:hover {
+  border-color: blueviolet;
+}
+
+.headerTitle {
+  font-size: 4rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.btnsSection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  width: 100%;
+  gap: 1rem ;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.listItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+
+  font-size: 1.6rem;
+
+  padding: .4rem;
+  background-color: rgba(105, 105, 105, 0.1);
+  border-radius: .8rem;
 }
 
-.card {
-  padding: 2em;
+
+.itemNumber {
+  font-size: inherit;
+  opacity: .5;
+  padding: .5rem 1rem;
+  border-radius: 1rem;
 }
 
-.read-the-docs {
-  color: #888;
+.itemTitle {
+  font-size: inherit;
 }
